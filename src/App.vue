@@ -5,7 +5,21 @@
     </div>
 
     <div class="knob-container">
-      <div class="knob" v-for="(knob, index) in accelKnobs" :key="index">
+      <div
+        class="knob"
+        v-for="(knob, index) in accelKnobs.slice(0, 3)"
+        :key="index"
+      >
+        <Knob :knob="knob" />
+      </div>
+    </div>
+
+    <div class="knob-container">
+      <div
+        class="knob"
+        v-for="(knob, index) in accelKnobs.slice(3)"
+        :key="index"
+      >
         <Knob :knob="knob" />
       </div>
     </div>
@@ -34,7 +48,7 @@ export default class App extends Vue {
     {
       id: 0,
       label: "Knob 1",
-      rotation: -132,
+      rotation: -44,
       color: "#e9c46a",
       active: true,
       selected: false,
@@ -45,18 +59,37 @@ export default class App extends Vue {
     {
       id: 0,
       label: "Knob 2",
-      rotation: -132,
-      color: "#e63946",
+      rotation: 10,
+      color: "#3a86ff",
       active: true,
       selected: false,
       style: 3,
       value: 0,
     },
-
     {
       id: 0,
       label: "Knob 3",
-      rotation: -132,
+      rotation: -122,
+      color: "#f15bb5",
+      active: true,
+      selected: false,
+      style: 1,
+      value: 0,
+    },
+    {
+      id: 0,
+      label: "Knob 4",
+      rotation: -69,
+      color: "#e63946",
+      active: true,
+      selected: false,
+      style: 2,
+      value: 0,
+    },
+    {
+      id: 0,
+      label: "Knob 5",
+      rotation: 89,
       color: "#ffba08",
       active: true,
       selected: false,
