@@ -1,24 +1,4 @@
-# knob-slider
+# Vue Knob Slider
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Preview
+![image](https://user-images.githubusercontent.com/37204706/111599242-5029fe80-878d-11eb-8983-09431c61037e.png)
